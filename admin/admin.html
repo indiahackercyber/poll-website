@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <div>
+        <h3>Create a New Poll</h3>
+        <form id="pollForm">
+            <label for="question">Poll Question:</label><br>
+            <input type="text" id="question" name="question"><br><br>
+
+            <label>Poll Options:</label><br>
+            <input type="text" name="option" placeholder="Option 1"><br>
+            <input type="text" name="option" placeholder="Option 2"><br>
+            <input type="text" name="option" placeholder="Option 3"><br>
+            <input type="text" name="option" placeholder="Option 4"><br><br>
+
+            <label for="correctAnswer">Select Correct Answer (Optional):</label><br>
+            <select id="correctAnswer" name="correctAnswer">
+                <option value="">None</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select><br><br>
+
+            <button type="submit">Create Poll</button>
+        </form>
+    </div>
+
+    <div id="existingPolls">
+        <h3>Manage Existing Polls</h3>
+        <!-- Admin will see all existing polls here -->
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
