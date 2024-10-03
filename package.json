@@ -1,0 +1,14 @@
+{
+  "name": "poll-website",
+  "version": "1.0.0",
+  "description": "A simple poll website with user voting and admin management.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  }
+}
